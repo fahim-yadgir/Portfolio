@@ -8,6 +8,7 @@ export const profile = {
   role: 'Data Analyst',
   tagline: 'Turning Data into Decisions',
   intro: 'I clean, analyse and visualise data so businesses can act on it. SQL, Python, Power BI and Tableau are my daily tools, backed by a software development foundation.',
+  photo: '/Photo.png',
   email: 'your.email@example.com', // TODO
   github: 'https://github.com/your-username', // TODO
   linkedin: 'https://linkedin.com/in/your-username', // TODO
@@ -15,6 +16,7 @@ export const profile = {
 }
 
 export const nav = [
+  { id: 'documents', label: 'Docs' },
   { id: 'home', label: 'Home' }, { id: 'about', label: 'About' }, { id: 'skills', label: 'Skills' },
   { id: 'projects', label: 'Projects' }, { id: 'internship', label: 'Internship' },
   { id: 'certifications', label: 'Certs' }, { id: 'dev', label: 'Dev' }, { id: 'ai', label: 'AI' },
@@ -133,3 +135,10 @@ export const education = [
 export const achievements = ['Hackathon participation (add name and result)', 'Academic CGPA of 9.67 in BCA', 'Forage Data Analyst certification'] // TODO
 
 export const tools = ['GitHub', 'VS Code', 'Power BI', 'Tableau', 'MySQL Workbench', 'Jupyter', 'Postman', 'Vercel', 'Cloudflare', 'Excel']
+
+export const documents = [
+  { name: 'Resume', type: 'PDF', file: '/resume.pdf' },
+  { name: 'Cisco Data Analytics Certificate', type: 'PDF', file: '/documents/cisco-certificate.pdf' },
+  { name: 'Forage Internship Certificate', type: 'PDF', file: '/documents/forage-certificate.pdf' },
+  { name: 'BCA Marksheet', type: 'PDF', file: '/documents/bca-marksheet.pdf' }
+]

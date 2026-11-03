@@ -6,6 +6,7 @@ import Skills from './sections/Skills.jsx'
 import Projects from './sections/Projects.jsx'
 import Internship from './sections/Internship.jsx'
 import Certifications from './sections/Certifications.jsx'
+import Documents from './sections/Documents.jsx'
 import DevSkills from './sections/DevSkills.jsx'
 import DevProjects from './sections/DevProjects.jsx'
 import AiDev from './sections/AiDev.jsx'
@@ -21,7 +22,7 @@ export default function App() {
       <Navbar />
       <main>
         <Hero /><About /><Skills /><Projects /><Internship /><Certifications />
-        <DevSkills /><DevProjects /><AiDev /><Experience /><Education />
+        <Documents /><DevSkills /><DevProjects /><AiDev /><Experience /><Education />
         <Achievements /><TechStack /><Contact />
       </main>
       <footer className="border-t border-line py-8 text-center text-sm text-mist">
