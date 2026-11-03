@@ -9,9 +9,10 @@ export const profile = {
   tagline: 'Turning Data into Decisions',
   intro: 'I clean, analyse and visualise data so businesses can act on it. SQL, Python, Power BI and Tableau are my daily tools, backed by a software development foundation.',
   photo: '/Photo.png',
-  email: 'your.email@example.com', // TODO
-  github: 'https://github.com/your-username', // TODO
-  linkedin: 'https://linkedin.com/in/your-username', // TODO
+  whatsapp: '7385094941',
+  email: 'fahimyadgir07@gmail.com', // TODO
+  github: 'https://github.com/fahim-yadgir', // TODO
+  linkedin: 'https://www.linkedin.com/in/fahim-yadgir-32b842344/', // TODO
   resume: '/resume.pdf' // put your file in /public/resume.pdf
 }
 
@@ -128,8 +129,7 @@ export const experience = [
 ]
 
 export const education = [
-  { degree: 'Bachelor of Computer Applications (BCA)', place: 'Your College', year: '20XX - 20XX', note: 'CGPA 9.67', courses: ['DBMS', 'Data Structures', 'Statistics', 'Web Technologies', 'Java'] }, // TODO
-  { degree: 'Higher Secondary / School', place: 'Your School', year: '20XX', note: '', courses: [] } // TODO
+  { degree: 'Bachelor of Computer Applications (BCA)', place: 'Your College', year: '2024 - 2027', note: 'CGPA 9.67', courses: ['DBMS', 'Data Structures', 'Statistics', 'Web Technologies', 'Java' , 'Data Science'] }, // TODO
 ]
 
 export const achievements = ['Hackathon participation (add name and result)', 'Academic CGPA of 9.67 in BCA', 'Forage Data Analyst certification'] // TODO
