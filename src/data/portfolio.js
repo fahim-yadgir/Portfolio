@@ -222,6 +222,7 @@ export const devProjects = [
   }
 ]
 
+
 export const aiDev = [
   ['AI-assisted coding', 'Pair-programming with AI to write and review code faster.'],
   ['Rapid prototyping', 'Turning ideas into working demos in hours, not weeks.'],
