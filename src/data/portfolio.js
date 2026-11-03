@@ -9,7 +9,7 @@ export const profile = {
   tagline: 'Turning Data into Decisions',
   intro: 'I clean, analyse and visualise data so businesses can act on it. SQL, Python, Power BI and Tableau are my daily tools, backed by a software development foundation.',
   photo: '/Photo.png',
-  whatsapp: '7385094941',
+  whatsapp: '917385094941',
   email: 'fahimyadgir07@gmail.com', // TODO
   github: 'https://github.com/fahim-yadgir', // TODO
   linkedin: 'https://www.linkedin.com/in/fahim-yadgir-32b842344/', // TODO
@@ -47,47 +47,123 @@ export const skillTags = ['Data Analysis', 'Data Visualization', 'Storytelling w
 // chart = 6-8 numbers that draw the mini chart on each card (use real values from your analysis if you can)
 export const projects = [
   {
-    title: 'Sales Analysis', category: 'Python', chart: [30, 45, 38, 62, 55, 78, 90],
-    problem: 'Find which products, regions and months drive revenue and where sales are slipping.', // TODO
+    title: 'Sales Analysis',
+    category: 'Python',
+    chart: [30, 45, 38, 62, 55, 78, 90],
+    problem: 'Find which products, regions and months drive revenue and where sales are slipping.',
     tools: ['Python', 'Pandas', 'Matplotlib', 'Excel'],
-    analysis: ['Cleaned and merged monthly sales files', 'Revenue trend and seasonality analysis', 'Top products and regions ranking'],
-    insights: ['Replace with your real finding, e.g. "Top 20% of products gave 70% of revenue"'], // TODO
-    image: '', github: '', demo: ''
+    analysis: [
+      'Cleaned and merged monthly sales files',
+      'Revenue trend and seasonality analysis',
+      'Top products and regions ranking'
+    ],
+    insights: [
+      'Identified top-performing products and regions contributing to overall sales.',
+      'Highlighted monthly sales trends and seasonal patterns to support better planning.',
+      'Recognised low-performing product categories that may require business attention.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   },
   {
-    title: 'E-Commerce Customer Analytics', category: 'SQL', chart: [20, 35, 50, 44, 66, 72, 85],
-    problem: 'Understand customer segments, repeat purchase behaviour and order value.', // TODO
+    title: 'E-Commerce Customer Analytics',
+    category: 'SQL',
+    chart: [20, 35, 50, 44, 66, 72, 85],
+    problem: 'Understand customer segments, repeat purchase behaviour and order value.',
     tools: ['MySQL', 'SQL', 'Power BI'],
-    analysis: ['RFM segmentation with SQL window functions', 'Cohort and repeat-purchase analysis', 'Average order value by segment'],
-    insights: ['Replace with your real finding'], image: '', github: '', demo: ''
+    analysis: [
+      'RFM segmentation with SQL window functions',
+      'Cohort and repeat-purchase analysis',
+      'Average order value by segment'
+    ],
+    insights: [
+      'Identified valuable customer segments using RFM analysis.',
+      'Analysed repeat purchase behaviour to understand customer retention patterns.',
+      'Used average order value and purchasing trends to evaluate customer performance.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   },
   {
-    title: 'Finance Analysis', category: 'Power BI', chart: [60, 52, 58, 70, 64, 80, 76],
-    problem: 'Track income, expenses and profit margins to spot cost leaks.', // TODO
+    title: 'Finance Analysis',
+    category: 'Power BI',
+    chart: [60, 52, 58, 70, 64, 80, 76],
+    problem: 'Track income, expenses and profit margins to spot cost leaks.',
     tools: ['Power BI', 'DAX', 'Excel'],
-    analysis: ['Profit and loss dashboard', 'Budget vs actual variance', 'Expense category breakdown'],
-    insights: ['Replace with your real finding'], image: '', github: '', demo: ''
+    analysis: [
+      'Profit and loss dashboard',
+      'Budget vs actual variance',
+      'Expense category breakdown'
+    ],
+    insights: [
+      'Identified major expense categories affecting overall profitability.',
+      'Compared actual financial performance against budget expectations.',
+      'Highlighted revenue and profit trends to support financial decision-making.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   },
   {
-    title: 'Customer Churn Analysis', category: 'Python', chart: [80, 72, 65, 70, 55, 48, 40],
-    problem: 'Identify why customers leave and which segments are at highest risk.', // TODO
+    title: 'Customer Churn Analysis',
+    category: 'Python',
+    chart: [80, 72, 65, 70, 55, 48, 40],
+    problem: 'Identify why customers leave and which segments are at highest risk.',
     tools: ['Python', 'Pandas', 'Seaborn', 'Statistics'],
-    analysis: ['EDA on tenure, contract and charges', 'Churn rate by segment', 'Correlation and hypothesis testing'],
-    insights: ['Replace with your real finding'], image: '', github: '', demo: ''
+    analysis: [
+      'EDA on tenure, contract and charges',
+      'Churn rate by segment',
+      'Correlation and hypothesis testing'
+    ],
+    insights: [
+      'Identified customer segments with relatively higher churn rates.',
+      'Explored relationships between customer tenure, contract types and churn.',
+      'Highlighted customer characteristics that can help improve retention strategies.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   },
   {
-    title: 'Global Electronics Dashboard', category: 'Tableau', chart: [25, 40, 55, 48, 70, 82, 95],
-    problem: 'Give leadership one view of global electronics sales, profit and delivery performance.', // TODO
+    title: 'Global Electronics Dashboard',
+    category: 'Tableau',
+    chart: [25, 40, 55, 48, 70, 82, 95],
+    problem: 'Give leadership one view of global electronics sales, profit and delivery performance.',
     tools: ['Tableau', 'Excel'],
-    analysis: ['Calculated fields and KPIs', 'Geographic sales map', 'Interactive filters and drill-downs'],
-    insights: ['Replace with your real finding'], image: '', github: '', demo: ''
+    analysis: [
+      'Calculated fields and KPIs',
+      'Geographic sales map',
+      'Interactive filters and drill-downs'
+    ],
+    insights: [
+      'Compared sales and profitability performance across different countries.',
+      'Identified top-performing product categories and sales channels.',
+      'Provided interactive KPI tracking to help leadership monitor business performance.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   },
   {
-    title: 'Student Performance Analytics', category: 'Python', chart: [50, 58, 54, 66, 72, 69, 84],
-    problem: 'Explore which factors relate most to student results.', // TODO
+    title: 'Student Performance Analytics',
+    category: 'Python',
+    chart: [50, 58, 54, 66, 72, 69, 84],
+    problem: 'Explore which factors relate most to student results.',
     tools: ['Python', 'Pandas', 'Matplotlib'],
-    analysis: ['Data cleaning and EDA', 'Score distribution and correlations'],
-    insights: ['Replace with your real finding'], image: '', github: '', demo: ''
+    analysis: [
+      'Data cleaning and EDA',
+      'Score distribution and correlations'
+    ],
+    insights: [
+      'Identified patterns in student performance through exploratory data analysis.',
+      'Examined relationships between student attributes and academic scores.',
+      'Used visualisations to highlight performance trends and potential improvement areas.'
+    ],
+    image: '',
+    github: '',
+    demo: ''
   }
 ]
 
@@ -109,11 +185,41 @@ export const certifications = [
 export const devSkills = ['Java', 'JavaScript', 'React.js', 'HTML / CSS', 'Tailwind CSS', 'MySQL / SQL / PL/SQL', 'Git & GitHub', 'Postman']
 
 export const devProjects = [
-  { title: 'Student Complaint Portal', desc: 'Portal for students to raise and track complaints with admin handling.', stack: ['React', 'Java', 'MySQL'], github: '', demo: '' },
-  { title: 'Vehicle Service Platform', desc: 'Booking and service tracking for vehicle workshops.', stack: ['React', 'Tailwind', 'MySQL'], github: '', demo: '' },
-  { title: 'Wedding & Decoration Website', desc: 'Client website showcasing packages, gallery and enquiries.', stack: ['React', 'Tailwind'], github: '', demo: '' },
-  { title: 'Cinematic Studio Website', desc: 'Animated portfolio site for a film studio.', stack: ['React', 'Tailwind'], github: '', demo: '' },
-  { title: 'ClothManage', desc: 'Inventory and sales management for a clothing business.', stack: ['React', 'Java', 'SQL'], github: '', demo: '' }
+  {
+    title: 'Student Complaint Portal',
+    desc: 'A web-based portal that allows students to submit and track complaints, with an admin interface for complaint management.',
+    stack: ['React', 'Java', 'MySQL'],
+    github: '',
+    demo: 'https://student-complaint-portal-rho.vercel.app/'
+  },
+  {
+    title: 'Vehicle Service Platform',
+    desc: 'A vehicle service management platform for customers to book services, manage vehicles and track service orders.',
+    stack: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS'],
+    github: '',
+    demo: 'https://vehical-service-platform.vercel.app/'
+  },
+  {
+    title: 'Wedding & Decoration Website',
+    desc: 'A client website showcasing wedding planning and decoration services, packages, galleries and customer enquiries.',
+    stack: ['React', 'Tailwind CSS'],
+    github: '',
+    demo: 'https://website-wedding-and-decorations.fahimyadgir07.workers.dev/'
+  },
+  {
+    title: 'Cinematic Studio Website',
+    desc: 'An animated portfolio website designed to showcase cinematic work, creative projects and studio services.',
+    stack: ['React', 'Tailwind CSS'],
+    github: '',
+    demo: ''
+  },
+  {
+    title: 'Gymoff Flow App',
+    desc: 'A gym management application currently live in the market. Working on frontend development, testing and UI improvements.',
+    stack: ['React', 'Tailwind CSS'],
+    github: '',
+    demo: ''
+  }
 ]
 
 export const aiDev = [
