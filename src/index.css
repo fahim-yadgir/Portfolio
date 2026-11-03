@@ -1,21 +1,185 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; scroll-padding-top: 4.5rem; }
+/* Global reset and responsive foundation */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+  width: 100%;
+  overflow-x: clip;
+}
+
 body {
   @apply bg-ink text-mist font-body antialiased;
-  background-image: linear-gradient(rgba(15,23,42,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,.04) 1px, transparent 1px);
+  width: 100%;
+  min-width: 320px;
+  margin: 0;
+  overflow-x: clip;
+
+  background-image:
+    linear-gradient(rgba(15, 23, 42, .04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(15, 23, 42, .04) 1px, transparent 1px);
   background-size: 48px 48px;
 }
-h1, h2, h3 { @apply font-display text-white; }
-:focus-visible { @apply outline outline-2 outline-offset-2 outline-amber; }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .animate-marquee { animation: none; } }
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: clip;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-display text-white;
+  overflow-wrap: anywhere;
+}
+
+p,
+a,
+span {
+  overflow-wrap: break-word;
+}
+
+button,
+input,
+textarea,
+select {
+  max-width: 100%;
+}
+
+:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-amber;
+}
+
+/* Responsive section spacing */
+section {
+  width: 100%;
+  min-width: 0;
+  scroll-margin-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .animate-marquee {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
 
 @layer components {
-  .card { @apply rounded-xl border border-line bg-panel p-6 shadow-sm transition-all duration-300 hover:border-teal/60 hover:shadow-md; }
-  .btn { @apply inline-flex items-center gap-2 rounded-lg px-5 py-2.5 font-medium transition active:scale-95; }
-  .btn-primary { @apply btn bg-amber text-ink hover:bg-amber/90; }
-  .btn-ghost { @apply btn border border-line bg-panel text-white hover:border-teal hover:text-teal; }
-  .chip { @apply rounded-md bg-ink px-2.5 py-1 text-xs text-teal border border-line; }
+  .card {
+    @apply rounded-xl border border-line bg-panel p-6 shadow-sm transition-all duration-300 hover:border-teal/60 hover:shadow-md;
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-5 py-2.5 font-medium transition active:scale-95;
+    max-width: 100%;
+    white-space: normal;
+  }
+
+  .btn-primary {
+    @apply btn bg-amber text-ink hover:bg-amber/90;
+  }
+
+  .btn-ghost {
+    @apply btn border border-line bg-panel text-white hover:border-teal hover:text-teal;
+  }
+
+  .chip {
+    @apply inline-flex max-w-full rounded-md bg-ink px-2.5 py-1 text-xs text-teal border border-line;
+    overflow-wrap: anywhere;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    scroll-padding-top: 4.5rem;
+  }
+
+  .card {
+    @apply p-5;
+  }
+
+  section {
+    scroll-margin-top: 4.5rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  body {
+    background-size: 32px 32px;
+  }
+
+  h1 {
+    line-height: 1.15;
+  }
+
+  h2 {
+    line-height: 1.2;
+  }
+
+  .card {
+    @apply rounded-lg p-4;
+  }
+
+  .btn {
+    @apply px-4 py-2.5 text-sm;
+  }
+
+  /* Prevent common grid and flex overflow */
+  .grid > *,
+  .flex > * {
+    min-width: 0;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 380px) {
+  .card {
+    @apply p-3;
+  }
+
+  .btn {
+    @apply px-3 text-xs;
+  }
 }
