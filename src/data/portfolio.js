@@ -231,14 +231,29 @@ export const aiDev = [
 ]
 
 export const experience = [
-  { title: 'Freelance Web Developer', points: ['Built client websites end to end', 'Deployed on Vercel and Cloudflare', 'Handled requirements, revisions and delivery'] } // TODO
+  {
+    title: 'Data Analyst Virtual Intern – Forage',
+    points: [
+      'Completed a virtual Data Analyst internship through Forage',
+      'Worked on practical data analysis tasks and business-focused exercises',
+      'Applied analytical thinking to interpret data and derive insights'
+    ]
+  },
+  {
+    title: 'Freelance Web Developer',
+    points: [
+      'Built client websites end to end',
+      'Deployed projects on Vercel and Cloudflare',
+      'Handled client requirements, revisions and project delivery'
+    ]
+  }
 ]
 
 export const education = [
   { degree: 'Bachelor of Computer Applications (BCA)', place: 'Your College', year: '2024 - 2027', note: 'CGPA 9.67', courses: ['DBMS', 'Data Structures', 'Statistics', 'Web Technologies', 'Java' , 'Data Science'] }, // TODO
 ]
 
-export const achievements = ['Hackathon participation (add name and result)', 'Academic CGPA of 9.67 in BCA', 'Forage Data Analyst certification'] // TODO
+export const achievements = ['Hackathon participation : Elite 0.1 Hackathon ', 'Academic CGPA of 9.67 in BCA', 'Forage Data Analyst certification'] // TODO
 
 export const tools = ['GitHub', 'VS Code', 'Power BI', 'Tableau', 'MySQL Workbench', 'Jupyter', 'Postman', 'Vercel', 'Cloudflare', 'Excel']
 
